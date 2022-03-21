@@ -56,7 +56,7 @@ const Header:React.FC = () => {
                             <UserGroupIcon className="navBtn" />
                             <HeartIcon className="navBtn" />
                 
-                            <img src={session?.user?.image}
+                            <img src={session?.user?.image || null}
                             alt="profile pic" className="h-10 w-10 rounded-full cursor-pointer"
                             onClick={() => signOut()}/>
                     </>
