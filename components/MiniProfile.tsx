@@ -7,7 +7,7 @@ const MiniProfile:React.FC = () => {
 
     return (
         <div className="flex items-center justify-between mt-14 ml-10">
-            <img src={session?.user?.image} 
+            <img src={session?.user?.image || null || undefined} 
             alt="profile pic" className="rounded-full border p-[2px] w-16 h-16"/>
 
             <div className="flex-1 mx-4">
