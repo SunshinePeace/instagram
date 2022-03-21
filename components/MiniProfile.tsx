@@ -4,7 +4,7 @@ import { signOut, useSession } from "next-auth/react"
 const MiniProfile:React.FC = () => {
 
     const { data: session } = useSession()
-    const username = session?.user.username;
+    const username : String | null| undefined = session?.user.username;
 
     return (
         <div className="flex items-center justify-between mt-14 ml-10">
